@@ -2,7 +2,7 @@
 
 Based on an **fictional project on TREDU-education** and supervised by **Leena Järvenkylä-Niemi** <leeniemi.net>
 
-2019.01.17  New version from esitutkimus-files and added a new revision from Kayttotapauschart.
+2019.01.17  New version from esitutkimus-files and added a new revision from Kayttotapauschart.<br />s
 2019.01.17  Edited esitukimus-document and added pdf-file<br />
 2019.01.17  Forking of readme.md<br />
 2019.01.17  Added memo from meeting<br />
