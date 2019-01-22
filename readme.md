@@ -2,6 +2,7 @@
 
 Based on an **fictional project on TREDU-education** and supervised by **Leena Järvenkylä-Niemi** <leeniemi.net>
 
+2019.01.22  Added ER-chart and database-chart.<br />
 2019.01.21  Added schedule-1.0.<br />
 2019.01.17  Added first weekly report and some template-changes for documents.<br />
 2019.01.17  New version from esitutkimus-files and added a new revision from Kayttotapauschart.<br />
