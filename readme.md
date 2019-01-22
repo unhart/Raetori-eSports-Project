@@ -2,6 +2,7 @@
 
 Based on an **fictional project on TREDU-education** and supervised by **Leena Järvenkylä-Niemi** <leeniemi.net>
 
+2019.01.22  Added website-folder, bootstrap-files and baremetal html.<br />
 2019.01.22  Schedule got update due some of planning error and added some new functionality for it.<br />
 2019.01.22  Added ER-chart and database-chart.<br />
 2019.01.21  Added schedule-1.0.<br />
