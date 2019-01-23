@@ -1,38 +1,224 @@
-
 <!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html lang="en">
+  <!-- based on startbootstrap-grayscale-gh-template and heavily modified to fit for need -->
+  <!-- more information at: https://startbootstrap.com/template-overviews/grayscale/ -->
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-    <title>Raetori :: Räiskintää, tasohyppelya tai minecraftia, suorita kurssi pelaamalla</title>
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="http://themes.getbootstrap.com/xmlrpc.php" />
 
-    <link rel='apple-touch-icon' sizes='180x180' href='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/apple-touch-icon.png'>
-    <link rel='icon' type='image/png' sizes='32x32' href='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-32x32.png'>
-    <link rel='icon' type='image/png' sizes='16x16' href='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-16x16.png'>
-    <link rel='manifest' href='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/manifest.json'>
-    <link rel='shortcut icon' href='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon.ico'>
-    <meta name='msapplication-config' content='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/browserconfig.xml'>
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/jquery.min.js'></script>
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/Chart.min.js'></script>
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/Chart.bundle.min.js'></script>
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/tether.min.js'></script>
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/popper.min.js'></script>
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/bootstrap.min.js'></script>
-    <!-- The filemtime is to append a timestamp for the last time the stylesheet was updated to automate cache busting from CloudFlare -->
-    <script src='http://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/scripts.js?ver=1516485707'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!--[if lt IE 9]>
-    <script src="http://themes.getbootstrap.com/wp-content/themes/dokan/assets/js/html5.js" type="text/javascript"></script>
-    <![endif]-->
- </head>
-  <body>
-    <ul class="nav nav-preview d-none d-md-flex" role="tablist">
-      <li class="nav-item"><a class="nav-link btn-iframe-to-desktop-trigger active" data-toggle="tab" href="#home" role="tab"><i class="bootstrap-themes-icon-desktop nav-preview__icon"></i></a></li>
-      <li class="nav-item"><a class="nav-link nav-link--small btn-iframe-to-mobile-trigger" data-toggle="tab" href="#profile" role="tab"><i class="bootstrap-themes-icon-iphone nav-preview__icon nav-preview__icon--sm"></i></a></li>
-    </ul>
+    <title>Raetori ::  Enemmän irti kursseista ja miksei pelaamalla</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Open+Sans|PT+Sans" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/theme-2019.A.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top my-0" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger text-uppercase bgblack px-5" href="#page-top">Raetori</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#course">Kurssi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog">Blogi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" onclick="myFunction()" href="#admin">Kirjaudu</a>
+            </li>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle fa-fw"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">Activity Log</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="login-form">
+        <form action="confirmation.php" method="post">
+            <h2>Sign in</h2>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" required="required">
+            </div>
+            <div class="form-group clearfix">
+                <button type="submit" class="btn btn-primary pull-left">Sign in</button>
+                <label class="checkbox-inline pull-left remember-me"><input type="checkbox"> Remember me</label>
+            </div>
+            <div><a href="#">Can't access your account?</a></div>
+        </form>
+    </div> -->
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+
+          <h1 class="mx-auto my-0 text-uppercase bgblack">Raetori</h1>
+          <h2 class="mx-auto my-0 w-100 h-100 px-1 py-1 bgorange">Enemmän irti kursseista, miksei pelaamallakin</h2>
+          <div class="col-lg8 mx-auto text-center my-2 mx-2">
+            <a href="#register" class="btn btn-primary js-scroll-trigger mx-4">Rekisteröidy</a>
+            <a href="#admin" onclick="myFunction()" class="btn btn-primary js-scroll-trigger mx-4">Kirjaudu</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Ylläpito -->
+    <section id="admin" class="section-admin">
+      <div class="container debug">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <h2 class="text-white mb-5">Ylläpito toiminnot</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kurssin sisältö -->
+    <section id="course" class="section-course text-center">
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="carousel/01.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="carousel/02.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="carousel/03.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <!-- Blogi -->
+    <section id="blog" class="section-blog text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-left text-white bgblack py-3 px-3 text-uppercase">Blogi</h2>
+              <p class="text-white-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam arcu, interdum sed commodo a, finibus in mauris. Etiam semper gravida sapien consequat pulvinar. Proin quis nulla sed odio volutpat posuere et vitae justo. Nullam ultricies tortor id tincidunt tincidunt. Morbi fermentum erat nec felis accumsan luctus. Curabitur at imperdiet magna, eget pharetra dui. Praesent diam neque, placerat sed erat at, consectetur pharetra felis. Cras malesuada dui urna, at varius nunc consectetur vel. Sed magna augue, suscipit quis dolor sed, fringilla auctor risus.
+              </p>
+              <p class="text-white-50">
+                Donec metus massa, consectetur a dui pulvinar, venenatis scelerisque neque. Sed ornare, sapien dapibus lacinia placerat, turpis ligula lobortis quam, quis hendrerit ipsum orci nec mauris. Mauris et suscipit leo. Etiam eget elit eleifend, blandit quam in, suscipit ligula. Sed laoreet interdum mi vel finibus. Etiam ornare velit at scelerisque efficitur. Ut tincidunt pharetra lectus quis pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempor lacus vel fringilla dapibus. Ut consectetur mollis libero, vel lacinia neque consequat vitae.
+              </p>
+              <p class="text-white-50">
+                Nullam eget lorem lacinia, dapibus purus sodales, venenatis dolor. Sed vulputate, sem ac eleifend fringilla, eros nunc mollis diam, ac venenatis diam metus a urna. Donec leo arcu, blandit nec tincidunt ut, bibendum at urna. Vivamus vehicula augue odio, eu feugiat lorem ultricies ac. Praesent quis accumsan lectus, ut feugiat tellus. In sit amet tristique ante, non condimentum augue. Vestibulum id arcu eu nisl luctus tempor. Curabitur lacinia ipsum massa, nec sagittis nulla euismod eget. Etiam eu odio faucibus, aliquam nisl non, imperdiet odio. Mauris bibendum auctor placerat. Aenean suscipit libero ac libero tincidunt gravida.
+              </p>
+              <p class="text-white-50">
+                Vestibulum facilisis ullamcorper nisi in sagittis. Nunc quis magna ac justo scelerisque efficitur. Integer ac enim augue. Etiam a urna in enim tempus fermentum et eu quam. Vivamus auctor porta lectus, eget interdum turpis eleifend id. Aenean pharetra sagittis nulla. Sed molestie, nibh a molestie pharetra, libero augue tincidunt nisl, dictum blandit mi diam at ante. Vestibulum nec nulla id orci accumsan molestie ut et turpis.
+              </p>
+              <p class="text-white-50">
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec id tincidunt nibh. Pellentesque porttitor, sem sit amet maximus mollis, nibh enim elementum nisl, et porttitor velit lacus eu ligula. Sed pretium interdum enim a imperdiet. Praesent sit amet vestibulum lectus. Vestibulum ultricies nibh id fringilla sollicitudin. Cras tincidunt egestas lacus, sit amet venenatis massa porttitor venenatis. Mauris ut tortor non mi scelerisque tristique id ac erat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kirjautuminen / Rekistöröityminen -->
+    <section id="register" class="section-register">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <h2 class="text-white mb-5">Rekistöröidy kurssille</h2>
+
+            <form class="form-inline d-flex">
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Syötä käyttämäsi sähköpostiosoite (koulun)">
+              <button type="submit" class="btn btn-primary mx-auto">Rekistöröidy</button>
+            </form>
+                            <hr class="my-4">
+          <!-- </div> -->
+    <!-- <section class="contact-section bg-black"> -->
+            <!-- <div class="col-md-10 col-lg-8 mx-auto"> -->
+            <!-- <div class="row"> -->
+              <div class="card py-4 card-body text-left">
+                <!-- <i class="fas fa-envelope text-primary mb-2"></i> -->
+                <h4>Huomio</h4>
+                <!-- <hr class="my-4"> -->
+                <div class="text-black-50">Rekistöröidy käyttämälläsi sähköpostiosoitteella jonka jälkeen Opettaja tulee hyväksyä uusi käyttäjä kurssille.</div>
+              </div>
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        <p class ="dark">Copyright &copy; Anton Hussi, 2019</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("admin");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
 
   </body>
+
 </html>
