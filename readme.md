@@ -2,6 +2,7 @@
 
 Based on an **fictional project on TREDU-education** and supervised by **Leena Järvenkylä-Niemi** <leeniemi.net>
 
+2019.01.24  Added more files and revisited schedule.<br />
 2019.01.23  Added some workhours for schedule and exported.<br />
 2019.01.23  Reator-logo-template (Illustrator with exported 300dpi-individual files).<br />
 2019.01.23  Massive update, backup of old website-folder and importing new version from prototype. Prototype is made with bootstrap, heavily modificated grayscale-template along new fonts, styles, etc. Prototype need to be refine and decrease size of footprint of files.<br />
