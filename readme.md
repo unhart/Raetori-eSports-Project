@@ -2,6 +2,7 @@
 
 Based on an **fictional project on TREDU-education** and supervised by **Leena Järvenkylä-Niemi** <leeniemi.net>
 
+2019.01.28  Added QR-code for live-site.<br />
 2019.01.27  Added a new revision from the logo and AI-file along an exported .png-files form it. Updated files. Web-repo is about 3-5 cycles behind of actual live-version. Fixing of minor spelling errors.<br />
 2019.01.26  Added a new revision from er-chart and database.<br />
 2019.01.24  Added more of files and updated the schedule.<br />
