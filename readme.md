@@ -2,6 +2,7 @@
 
 Based on an **fictional project on TREDU-education** and supervised by **Leena Järvenkylä-Niemi** <leeniemi.net>
 
+2019.02.06  Updated readme.md and added SQL-database structure.<br />
 2019.02.04  Added project-charter, a lot of other files and charts, include a new revisions and some corrections for files.<br />
 2019.01.31  Updated schedule and added 3rd-weekly report along with memo.<br />
 2019.01.30  Added new revision from QR-code aka actual live-site.<br />
